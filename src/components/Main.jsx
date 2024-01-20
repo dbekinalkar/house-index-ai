@@ -25,10 +25,12 @@ const Main = ({ id }) => {
   };
 
   return (
-    <div id={id} className="container mx-auto min-h-screen p-8">
+    <div id={id} className="container mx-auto max-h-screen p-8">
       <Map />
 
-      <div className="text-center text-3xl my-4">Year: {progressToYear(progress)}</div>
+      <div className="text-center text-3xl my-4">
+        Year: {progressToYear(progress)}
+      </div>
 
       <input
         type="range"

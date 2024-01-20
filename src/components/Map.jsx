@@ -2,8 +2,8 @@ import MapView from "./MapView";
 
 const Map = () => {
   return (
-    <div className="w-full h-full min-h-96 flex items-center justify-center bg-white">
-      <MapView /> 
+    <div className=" mx-auto w-full h-full container   flex items-center justify-center bg-white rounded-lg">
+      <MapView fillColor="#FF0000" />
     </div>
   );
 };

@@ -1,13 +1,8 @@
 import { geoCentroid } from "d3-geo";
-import {
-  ComposableMap,
-  Geographies,
-  Geography,
-  Marker,
-  Annotation,
-} from "react-simple-maps";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
 import allStates from "./data/allstates.json";
+import State from "./State";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
@@ -32,7 +27,7 @@ const MapView = () => {
             {geographies.map((geo) => (
               <Geography
                 key={geo.rsmKey}
-                stroke="#FFF"
+                stroke="#000"
                 geography={geo}
                 fill="#DDD"
               />
@@ -41,28 +36,34 @@ const MapView = () => {
               const centroid = geoCentroid(geo);
               const cur = allStates.find((s) => s.val === geo.id);
               return (
-                <g key={geo.rsmKey + "-name"}>
-                  {cur &&
-                    centroid[0] > -160 &&
-                    centroid[0] < -67 &&
-                    (Object.keys(offsets).indexOf(cur.id) === -1 ? (
-                      <Marker coordinates={centroid}>
-                        <text y="2" fontSize={14} textAnchor="middle">
-                          {cur.id}
-                        </text>
-                      </Marker>
-                    ) : (
-                      <Annotation
-                        subject={centroid}
-                        dx={offsets[cur.id][0]}
-                        dy={offsets[cur.id][1]}
-                      >
-                        <text x={4} fontSize={14} alignmentBaseline="middle">
-                          {cur.id}
-                        </text>
-                      </Annotation>
-                    ))}
-                </g>
+                <State
+                  key={geo.rsmKey}
+                  geo={geo}
+                  offsets={offsets}
+                  allStates={allStates}
+                />
+                // <                <g key={geo.rsmKey + "-name"}>
+                //                   {cur &&
+                //                     centroid[0] > -160 &&
+                //                     centroid[0] < -67 &&
+                //                     (Object.keys(offsets).indexOf(cur.id) === -1 ? (
+                //                       <Marker coordinates={centroid}>
+                //                         <text y="2" fontSize={14} textAnchor="middle">
+                //                           {cur.id}
+                //                         </text>
+                //                       </Marker>
+                //                     ) : (
+                //                       <Annotation
+                //                         subject={centroid}
+                //                         dx={offsets[cur.id][0]}
+                //                         dy={offsets[cur.id][1]}
+                //                       >
+                //                         <text x={4} fontSize={14} alignmentBaseline="middle">
+                //                           {cur.id}
+                //                         </text>
+                //                       </Annotation>
+                //                     ))}
+                //                 </g>>
               );
             })}
           </>
