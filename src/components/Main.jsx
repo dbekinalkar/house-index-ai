@@ -10,23 +10,35 @@ const Main = ({ id }) => {
   const progressToYear = (progress) => {
     switch (progress) {
       case "0":
-        return 2015;
-      case "25":
-        return 2016;
+        return 2020;
+      case "10":
+        return 2021;
+      case "20":
+        return 2022;
+      case "30":
+        return 2023;
+      case "40":
+        return 2024;
       case "50":
-        return 2017;
-      case "75":
-        return 2018;
+        return 2025;
+      case "60":
+        return 2026;
+      case "70":
+        return 2027;
+      case "80":
+        return 2028;
+      case "90":
+        return 2029;
       case "100":
-        return 2019;
+        return 2030;
       default:
-        return 2015;
+        return 2020;
     }
   };
 
   return (
     <div id={id} className="container mx-auto max-h-screen p-8">
-      <Map />
+      <Map year={progressToYear(progress)} />
 
       <div className="text-center text-3xl my-4">
         Year: {progressToYear(progress)}
@@ -41,9 +53,15 @@ const Main = ({ id }) => {
           setProgress(e.target.value);
         }}
         className="range"
-        step="25"
+        step="10"
       />
       <div className="w-full flex justify-between text-xs px-2">
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
         <span>|</span>
         <span>|</span>
         <span>|</span>

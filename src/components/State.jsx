@@ -3,20 +3,12 @@ import { geoCentroid } from "d3-geo";
 
 import { Tooltip } from "react-tooltip";
 
-const State = ({ geo, allStates, offsets, setTooltipContent }) => {
+const State = ({ geo, allStates, offsets }) => {
   const centroid = geoCentroid(geo);
   const cur = allStates.find((s) => s.val === geo.id);
 
   return (
-    <g
-      key={geo.rsmKey + "-name"}
-      //   onMouseEnter={() => {
-      //     setTooltipContent(`${geo.properties.name}`);
-      //   }}
-      //   onMouseLeave={() => {
-      //     setTooltipContent("");
-      //   }}
-    >
+    <g key={geo.rsmKey + "-name"} className="select-none">
       {cur &&
         centroid[0] > -160 &&
         centroid[0] < -67 &&

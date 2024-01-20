@@ -4,6 +4,8 @@ import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import allStates from "./data/allstates.json";
 import State from "./State";
 
+import { scaleLinear } from "d3-scale";
+
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
 const offsets = {
@@ -18,30 +20,45 @@ const offsets = {
   DC: [49, 21],
 };
 
-const MapView = ({ setTooltipContent }) => {
+const redColorScale = scaleLinear()
+  .domain([1, 78]) // Range of your values
+  .range(["#ffcccc", "#ff0000"]); // Light red to dark red
+
+const MapView = ({ setTooltipContent, fillColor, year, price }) => {
   return (
     <ComposableMap projection="geoAlbersUsa">
       <Geographies geography={geoUrl}>
         {({ geographies }) => (
           <>
             {geographies.map((geo) => (
-              <Geography
+              <g
+                key={geo.rsmKey}
                 onMouseEnter={() => {
-                  setTooltipContent(`${geo.properties.name}`);
+                  setTooltipContent({
+                    name: geo.properties.name,
+                    id: geo.id,
+                  });
                 }}
                 onMouseLeave={() => {
-                  setTooltipContent("");
+                  // setTooltipContent("");
                 }}
                 data-tooltip-id="my-tooltip"
-                key={geo.rsmKey}
-                stroke="#000"
-                geography={geo}
-                fill="#DDD"
-              />
+              >
+                <Geography
+                  key={geo.rsmKey}
+                  stroke="#000"
+                  geography={geo}
+                  fill={redColorScale(geo.id)}
+                />
+                <State
+                  key={geo.rsmKey}
+                  geo={geo}
+                  offsets={offsets}
+                  allStates={allStates}
+                />
+              </g>
             ))}
-            {geographies.map((geo) => {
-              const centroid = geoCentroid(geo);
-              const cur = allStates.find((s) => s.val === geo.id);
+            {/* {geographies.map((geo) => {
               return (
                 <State
                   key={geo.rsmKey}
@@ -50,30 +67,8 @@ const MapView = ({ setTooltipContent }) => {
                   allStates={allStates}
                   setTooltipContent={setTooltipContent}
                 />
-                // <                <g key={geo.rsmKey + "-name"}>
-                //                   {cur &&
-                //                     centroid[0] > -160 &&
-                //                     centroid[0] < -67 &&
-                //                     (Object.keys(offsets).indexOf(cur.id) === -1 ? (
-                //                       <Marker coordinates={centroid}>
-                //                         <text y="2" fontSize={14} textAnchor="middle">
-                //                           {cur.id}
-                //                         </text>
-                //                       </Marker>
-                //                     ) : (
-                //                       <Annotation
-                //                         subject={centroid}
-                //                         dx={offsets[cur.id][0]}
-                //                         dy={offsets[cur.id][1]}
-                //                       >
-                //                         <text x={4} fontSize={14} alignmentBaseline="middle">
-                //                           {cur.id}
-                //                         </text>
-                //                       </Annotation>
-                //                     ))}
-                //                 </g>>
               );
-            })}
+            })} */}
           </>
         )}
       </Geographies>
