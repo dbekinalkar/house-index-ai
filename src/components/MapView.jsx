@@ -18,7 +18,7 @@ const offsets = {
   DC: [49, 21],
 };
 
-const MapView = () => {
+const MapView = ({ setTooltipContent }) => {
   return (
     <ComposableMap projection="geoAlbersUsa">
       <Geographies geography={geoUrl}>
@@ -41,6 +41,7 @@ const MapView = () => {
                   geo={geo}
                   offsets={offsets}
                   allStates={allStates}
+                  setTooltipContent={setTooltipContent}
                 />
                 // <                <g key={geo.rsmKey + "-name"}>
                 //                   {cur &&

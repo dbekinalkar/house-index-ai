@@ -1,12 +1,20 @@
 import { Marker, Annotation } from "react-simple-maps";
 import { geoCentroid } from "d3-geo";
 
-const State = ({ geo, allStates, offsets }) => {
+const State = ({ geo, allStates, offsets, setTooltipContent }) => {
   const centroid = geoCentroid(geo);
   const cur = allStates.find((s) => s.val === geo.id);
 
   return (
-    <g key={geo.rsmKey + "-name"}>
+    <g
+      key={geo.rsmKey + "-name"}
+      onMouseEnter={() => {
+        setTooltipContent(`${geo.properties.name}`);
+      }}
+      onMouseLeave={() => {
+        setTooltipContent("");
+      }}
+    >
       {cur &&
         centroid[0] > -160 &&
         centroid[0] < -67 &&
