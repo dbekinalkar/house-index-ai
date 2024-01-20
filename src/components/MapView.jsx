@@ -26,6 +26,13 @@ const MapView = ({ setTooltipContent }) => {
           <>
             {geographies.map((geo) => (
               <Geography
+                onMouseEnter={() => {
+                  setTooltipContent(`${geo.properties.name}`);
+                }}
+                onMouseLeave={() => {
+                  setTooltipContent("");
+                }}
+                data-tooltip-id="my-tooltip"
                 key={geo.rsmKey}
                 stroke="#000"
                 geography={geo}

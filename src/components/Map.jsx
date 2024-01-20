@@ -6,9 +6,7 @@ import { useEffect, useState } from "react";
 
 const Map = () => {
   const [content, setContent] = useState("");
-  useEffect(() => {
-    console.log(content);
-  }, [content]);
+  useEffect(() => {}, [content]);
 
   return (
     <div className=" mx-auto w-full h-full container   flex items-center justify-center bg-white rounded-lg">
@@ -17,7 +15,7 @@ const Map = () => {
         fillColor="#FF0000"
         setTooltipContent={setContent}
       />
-      <Tooltip>{content}</Tooltip>
+      <Tooltip id="my-tooltip">{content}</Tooltip>
     </div>
   );
 };
