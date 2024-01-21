@@ -46,13 +46,11 @@ const MapView = ({ setTooltipContent, fillColor, year, getPrice }) => {
                 data-tooltip-id="my-tooltip"
               >
                 <Geography
-                  key={geo.rsmKey}
                   stroke="#000"
                   geography={geo}
                   fill={redColorScale(getPrice(geo.id) + (year - 2020) * 10000)}
                 />
                 <State
-                  key={geo.rsmKey}
                   geo={geo}
                   offsets={offsets}
                   allStates={allStates}
