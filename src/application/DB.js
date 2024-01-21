@@ -1,4 +1,6 @@
 import basePrices from "../components/data/BasePrices.js";
+import forecastedHousing from "../components/data/forecastedHousing.js";
+import forecastedGDP from "../components/data/forecastedGDP.js";
 
 export const getPrice = (id) => {
   const stateId = basePrices.find((item) => item.val === id);
@@ -8,23 +10,39 @@ export const getPrice = (id) => {
   return basePrice;
 };
 
+export const getHousingForecast = (name, index) => {
+  const housingData = forecastedHousing[name];
+  return housingData && housingData[index] ? housingData[index].Forecast : null;
+};
+
+export const getGdpForecast = (name, index) => {
+  const gdpData = forecastedGDP[name];
+  return gdpData && gdpData[index] ? gdpData[index].Forecast : null;
+};
+
 export const getData = (state) => {
+  const basePrice = getPrice(state.id);
+
   let stateName = "";
   if (state && state.name) {
     stateName = state.name.replace(/\s/g, "").toLowerCase();
+
+    const housingIndex = (state.year - 1975) * 4;
+
+    const gdpIndex = state.year - 1929;
+
+    const housingIndexForecast = getHousingForecast(stateName, housingIndex);
+
+    const gdpIndexForecast = getGdpForecast(stateName, gdpIndex);
+
+    if (housingIndexForecast && gdpIndexForecast) {
+      const adjustedPrice = basePrice * (housingIndexForecast / 100);
+
+      const months = Math.ceil((adjustedPrice / gdpIndexForecast) * 12);
+
+      return months;
+    }
   }
 
-  const housingIndex = (state.year - 1975) * 4;
-
-  const gdpIndex = state.year - 1929;
-
-  // const gdpForecast =  get the "Forecast" value of the object with "gdpIndex"
-  // from the file ../components/data/json_forecasted_gdp/${stateName}_gdp.json
-
-  // const housingIndexForecast =  get the "Forecast" value of the object with "housingIndex"
-  // from the file ../components/data/json_forecasted_housing/${stateName}.json
-
-  const basePrice = getPrice(state.id);
-
-  return `${state.name} $${basePrice}`;
+  return undefined;
 };
