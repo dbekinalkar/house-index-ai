@@ -1,25 +1,18 @@
 import MapView from "./MapView";
-import basePrices from "./data/BasePrices.js";
 
 import { Tooltip } from "react-tooltip";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const getPrice = (id) => {
-  const stateId = basePrices.find((item) => item.val === id);
-
-  const basePrice = stateId ? stateId.price : null;
-
-  return basePrice;
-};
-
-const getData = (state) => {
-  const basePrice = getPrice(state.id);
-
-  return `${state.name} $${basePrice}`;
-};
+import { getPrice } from "../application/DB.js";
+import { getData } from "../application/DB.js";
 
 const Map = ({ year }) => {
   const [state, setState] = useState({});
+  const [months, setMonths] = useState(0);
+
+  useEffect(() => {
+    setMonths(getData(state, year));
+  }, [state]);
 
   return (
     <div className=" mx-auto w-full max-w-screen-md h-full container   flex items-center justify-center bg-white rounded-lg">
@@ -27,9 +20,11 @@ const Map = ({ year }) => {
         className="h-96 "
         year={year}
         setTooltipContent={setState}
-        getPrice={getPrice}
+        getData={getData}
       />
-      <Tooltip id="my-tooltip">{getData(state, year)}</Tooltip>
+      <Tooltip id="my-tooltip">
+        {state.name} requires {months} months of work
+      </Tooltip>
     </div>
   );
 };

@@ -13,20 +13,20 @@ const Hero = ({ scrollToMain }) => {
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Index AI</h1>
           <p className="mb-5">
-            Our website is dedicated to highlighting the escalating issue of
-            housing affordability. In an economy where the costs of homes are
-            skyrocketing far beyond the pace of average earnings, achieving
-            homeownership is becoming a distant dream for many. We use reliable
-            data from the Federal Reserve Economic Data (FRED) to bring this
-            critical issue into focus. Utilizing advanced time series
-            forecasting, we analyze trends and project future housing market
-            scenarios, offering a deeper understanding of what lies ahead.
-            Through our platform, we illustrate the widening gap between income
-            and home prices, providing an eye-opening perspective on the
-            economic barriers faced by potential homebuyers. Our aim is to shed
-            light on this growing challenge, offering clear, data-driven
-            insights to foster awareness and understanding of what it truly
-            takes to own a home in today's market.
+            Our website is committed to examining the challenges of housing
+            affordability with reliable data from the Federal Reserve Economic
+            Data (FRED). As home prices rise significantly faster than incomes,
+            owning a home is becoming increasingly difficult for many people. We
+            employ time series forecasting to analyze and predict future trends
+            in the housing market. Our approach involves comparing real estate
+            prices with GDP per capita. From this analysis, we calculate the
+            number of months required to purchase a house—if one could save
+            their entire income for this purpose. Our platform clearly shows the
+            growing gap between incomes and housing prices, offering a clear
+            view of the economic challenges potential homeowners face. Our goal
+            is to present this important issue through clear, data-driven
+            insights, helping to build awareness of the realities of owning a
+            home in today's economic environment.
           </p>
           <button className="btn btn-primary" onClick={scrollToMain}>
             Check it out!

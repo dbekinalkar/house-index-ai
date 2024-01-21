@@ -1,4 +1,3 @@
-import { geoCentroid } from "d3-geo";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
 import allStates from "./data/allstates.json";
@@ -20,10 +19,10 @@ const offsets = {
 };
 
 const redColorScale = scaleLinear()
-  .domain([31400, 229000]) // Range of your values
-  .range(["#ffcccc", "#ff0000"]); // Light red to dark red
+  .domain([28, 234]) // Range of your values
+  .range(["#ffbbbb", "#ff0000"]); // Light red to dark red
 
-const MapView = ({ setTooltipContent, fillColor, year, getPrice }) => {
+const MapView = ({ setTooltipContent, fillColor, year, getData }) => {
   return (
     <ComposableMap projection="geoAlbersUsa">
       <Geographies geography={stateShapes}>
@@ -36,6 +35,7 @@ const MapView = ({ setTooltipContent, fillColor, year, getPrice }) => {
                   setTooltipContent({
                     name: geo.properties.name,
                     id: geo.id,
+                    year: year,
                   });
                 }}
                 onMouseLeave={() => {
@@ -44,30 +44,19 @@ const MapView = ({ setTooltipContent, fillColor, year, getPrice }) => {
                 data-tooltip-id="my-tooltip"
               >
                 <Geography
-                  key={geo.rsmKey}
                   stroke="#000"
                   geography={geo}
-                  fill={redColorScale(getPrice(geo.id) + (year - 2020) * 10000)}
+                  fill={redColorScale(
+                    getData({
+                      name: geo.properties.name,
+                      id: geo.id,
+                      year: year,
+                    })
+                  )}
                 />
-                <State
-                  key={geo.rsmKey}
-                  geo={geo}
-                  offsets={offsets}
-                  allStates={allStates}
-                />
+                <State geo={geo} offsets={offsets} allStates={allStates} />
               </g>
             ))}
-            {/* {geographies.map((geo) => {
-              return (
-                <State
-                  key={geo.rsmKey}
-                  geo={geo}
-                  offsets={offsets}
-                  allStates={allStates}
-                  setTooltipContent={setTooltipContent}
-                />
-              );
-            })} */}
           </>
         )}
       </Geographies>
