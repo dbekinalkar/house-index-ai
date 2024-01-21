@@ -2,11 +2,10 @@ import { geoCentroid } from "d3-geo";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
 import allStates from "./data/allstates.json";
+import stateShapes from "./data/stateShapes.json";
 import State from "./State";
 
 import { scaleLinear } from "d3-scale";
-
-const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
 const offsets = {
   VT: [50, -8],
@@ -27,7 +26,7 @@ const redColorScale = scaleLinear()
 const MapView = ({ setTooltipContent, fillColor, year, getPrice }) => {
   return (
     <ComposableMap projection="geoAlbersUsa">
-      <Geographies geography={geoUrl}>
+      <Geographies geography={stateShapes}>
         {({ geographies }) => (
           <>
             {geographies.map((geo) => (
