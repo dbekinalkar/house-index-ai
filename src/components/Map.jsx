@@ -27,7 +27,7 @@ const Map = ({ year }) => {
         className="h-96 "
         year={year}
         setTooltipContent={setState}
-        price={state.id}
+        getPrice={getPrice}
       />
       <Tooltip id="my-tooltip">{getData(state, year)}</Tooltip>
     </div>

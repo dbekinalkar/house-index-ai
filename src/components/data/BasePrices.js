@@ -48,7 +48,7 @@ const basePrices = [
   { id: "WA", val: "53", price: 59900 },
   { id: "WV", val: "54", price: 38500 },
   { id: "WI", val: "55", price: 48600 },
-  { id: "WY", val: "56", prcie: 59800 },
+  { id: "WY", val: "56", price: 59800 },
 ];
 
 export default basePrices;

@@ -21,10 +21,10 @@ const offsets = {
 };
 
 const redColorScale = scaleLinear()
-  .domain([1, 78]) // Range of your values
+  .domain([31400, 229000]) // Range of your values
   .range(["#ffcccc", "#ff0000"]); // Light red to dark red
 
-const MapView = ({ setTooltipContent, fillColor, year, price }) => {
+const MapView = ({ setTooltipContent, fillColor, year, getPrice }) => {
   return (
     <ComposableMap projection="geoAlbersUsa">
       <Geographies geography={geoUrl}>
@@ -48,7 +48,7 @@ const MapView = ({ setTooltipContent, fillColor, year, price }) => {
                   key={geo.rsmKey}
                   stroke="#000"
                   geography={geo}
-                  fill={redColorScale(geo.id)}
+                  fill={redColorScale(getPrice(geo.id) + (year - 2020) * 10000)}
                 />
                 <State
                   key={geo.rsmKey}
