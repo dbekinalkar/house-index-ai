@@ -1,22 +1,10 @@
 import MapView from "./MapView";
-import basePrices from "./data/BasePrices.js";
 
 import { Tooltip } from "react-tooltip";
 import { useState } from "react";
 
-const getPrice = (id) => {
-  const stateId = basePrices.find((item) => item.val === id);
-
-  const basePrice = stateId ? stateId.price : null;
-
-  return basePrice;
-};
-
-const getData = (state) => {
-  const basePrice = getPrice(state.id);
-
-  return `${state.name} $${basePrice}`;
-};
+import { getPrice } from "../application/DB.js";
+import { getData } from "../application/DB.js";
 
 const Map = ({ year }) => {
   const [state, setState] = useState({});

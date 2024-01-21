@@ -1,0 +1,870 @@
+[
+    {
+        "index": 0,
+        "Value": "405.0",
+        "Forecast": "405.0",
+        "Date": "1929-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 1,
+        "Value": "333.0",
+        "Forecast": "333.0",
+        "Date": "1930-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 2,
+        "Value": "287.0",
+        "Forecast": "287.0",
+        "Date": "1931-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 3,
+        "Value": "208.0",
+        "Forecast": "208.0",
+        "Date": "1932-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 4,
+        "Value": "211.0",
+        "Forecast": "211.0",
+        "Date": "1933-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 5,
+        "Value": "246.0",
+        "Forecast": "246.0",
+        "Date": "1934-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 6,
+        "Value": "293.0",
+        "Forecast": "293.0",
+        "Date": "1935-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 7,
+        "Value": "343.0",
+        "Forecast": "343.0",
+        "Date": "1936-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 8,
+        "Value": "362.0",
+        "Forecast": "362.0",
+        "Date": "1937-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 9,
+        "Value": "338.0",
+        "Forecast": "338.0",
+        "Date": "1938-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 10,
+        "Value": "356.0",
+        "Forecast": "356.0",
+        "Date": "1939-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 11,
+        "Value": "377.0",
+        "Forecast": "377.0",
+        "Date": "1940-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 12,
+        "Value": "476.0",
+        "Forecast": "476.0",
+        "Date": "1941-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 13,
+        "Value": "656.0",
+        "Forecast": "656.0",
+        "Date": "1942-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 14,
+        "Value": "803.0",
+        "Forecast": "803.0",
+        "Date": "1943-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 15,
+        "Value": "908.0",
+        "Forecast": "908.0",
+        "Date": "1944-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 16,
+        "Value": "971.0",
+        "Forecast": "971.0",
+        "Date": "1945-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 17,
+        "Value": "947.0",
+        "Forecast": "947.0",
+        "Date": "1946-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 18,
+        "Value": "1026.0",
+        "Forecast": "1026.0",
+        "Date": "1947-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 19,
+        "Value": "1156.0",
+        "Forecast": "1156.0",
+        "Date": "1948-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 20,
+        "Value": "1188.0",
+        "Forecast": "1188.0",
+        "Date": "1949-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 21,
+        "Value": "1260.0",
+        "Forecast": "1260.0",
+        "Date": "1950-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 22,
+        "Value": "1410.0",
+        "Forecast": "1410.0",
+        "Date": "1951-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 23,
+        "Value": "1506.0",
+        "Forecast": "1506.0",
+        "Date": "1952-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 24,
+        "Value": "1536.0",
+        "Forecast": "1536.0",
+        "Date": "1953-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 25,
+        "Value": "1557.0",
+        "Forecast": "1557.0",
+        "Date": "1954-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 26,
+        "Value": "1641.0",
+        "Forecast": "1641.0",
+        "Date": "1955-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 27,
+        "Value": "1725.0",
+        "Forecast": "1725.0",
+        "Date": "1956-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 28,
+        "Value": "1842.0",
+        "Forecast": "1842.0",
+        "Date": "1957-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 29,
+        "Value": "1952.0",
+        "Forecast": "1952.0",
+        "Date": "1958-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 30,
+        "Value": "2022.0",
+        "Forecast": "2022.0",
+        "Date": "1959-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 31,
+        "Value": "2004.0",
+        "Forecast": "2004.0",
+        "Date": "1960-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 32,
+        "Value": "2073.0",
+        "Forecast": "2073.0",
+        "Date": "1961-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 33,
+        "Value": "2124.0",
+        "Forecast": "2124.0",
+        "Date": "1962-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 34,
+        "Value": "2174.0",
+        "Forecast": "2174.0",
+        "Date": "1963-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 35,
+        "Value": "2260.0",
+        "Forecast": "2260.0",
+        "Date": "1964-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 36,
+        "Value": "2383.0",
+        "Forecast": "2383.0",
+        "Date": "1965-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 37,
+        "Value": "2517.0",
+        "Forecast": "2517.0",
+        "Date": "1966-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 38,
+        "Value": "2620.0",
+        "Forecast": "2620.0",
+        "Date": "1967-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 39,
+        "Value": "2854.0",
+        "Forecast": "2854.0",
+        "Date": "1968-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 40,
+        "Value": "3109.0",
+        "Forecast": "3109.0",
+        "Date": "1969-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 41,
+        "Value": "3420.0",
+        "Forecast": "3420.0",
+        "Date": "1970-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 42,
+        "Value": "3677.0",
+        "Forecast": "3677.0",
+        "Date": "1971-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 43,
+        "Value": "4039.0",
+        "Forecast": "4039.0",
+        "Date": "1972-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 44,
+        "Value": "4421.0",
+        "Forecast": "4421.0",
+        "Date": "1973-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 45,
+        "Value": "4858.0",
+        "Forecast": "4858.0",
+        "Date": "1974-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 46,
+        "Value": "5391.0",
+        "Forecast": "5391.0",
+        "Date": "1975-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 47,
+        "Value": "5846.0",
+        "Forecast": "5846.0",
+        "Date": "1976-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 48,
+        "Value": "6382.0",
+        "Forecast": "6382.0",
+        "Date": "1977-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 49,
+        "Value": "7148.0",
+        "Forecast": "7148.0",
+        "Date": "1978-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 50,
+        "Value": "7877.0",
+        "Forecast": "7877.0",
+        "Date": "1979-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 51,
+        "Value": "8649.0",
+        "Forecast": "8649.0",
+        "Date": "1980-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 52,
+        "Value": "9597.0",
+        "Forecast": "9597.0",
+        "Date": "1981-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 53,
+        "Value": "10273.0",
+        "Forecast": "10273.0",
+        "Date": "1982-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 54,
+        "Value": "10820.0",
+        "Forecast": "10820.0",
+        "Date": "1983-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 55,
+        "Value": "11612.0",
+        "Forecast": "11612.0",
+        "Date": "1984-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 56,
+        "Value": "12384.0",
+        "Forecast": "12384.0",
+        "Date": "1985-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 57,
+        "Value": "12656.0",
+        "Forecast": "12656.0",
+        "Date": "1986-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 58,
+        "Value": "13010.0",
+        "Forecast": "13010.0",
+        "Date": "1987-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 59,
+        "Value": "13675.0",
+        "Forecast": "13675.0",
+        "Date": "1988-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 60,
+        "Value": "14514.0",
+        "Forecast": "14514.0",
+        "Date": "1989-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 61,
+        "Value": "15308.0",
+        "Forecast": "15308.0",
+        "Date": "1990-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 62,
+        "Value": "16044.0",
+        "Forecast": "16044.0",
+        "Date": "1991-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 63,
+        "Value": "16784.0",
+        "Forecast": "16784.0",
+        "Date": "1992-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 64,
+        "Value": "17595.0",
+        "Forecast": "17595.0",
+        "Date": "1993-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 65,
+        "Value": "18265.0",
+        "Forecast": "18265.0",
+        "Date": "1994-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 66,
+        "Value": "19191.0",
+        "Forecast": "19191.0",
+        "Date": "1995-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 67,
+        "Value": "19782.0",
+        "Forecast": "19782.0",
+        "Date": "1996-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 68,
+        "Value": "20509.0",
+        "Forecast": "20509.0",
+        "Date": "1997-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 69,
+        "Value": "21318.0",
+        "Forecast": "21318.0",
+        "Date": "1998-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 70,
+        "Value": "21523.0",
+        "Forecast": "21523.0",
+        "Date": "1999-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 71,
+        "Value": "23019.0",
+        "Forecast": "23019.0",
+        "Date": "2000-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 72,
+        "Value": "24545.0",
+        "Forecast": "24545.0",
+        "Date": "2001-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 73,
+        "Value": "25237.0",
+        "Forecast": "25237.0",
+        "Date": "2002-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 74,
+        "Value": "26108.0",
+        "Forecast": "26108.0",
+        "Date": "2003-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 75,
+        "Value": "27366.0",
+        "Forecast": "27366.0",
+        "Date": "2004-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 76,
+        "Value": "28744.0",
+        "Forecast": "28744.0",
+        "Date": "2005-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 77,
+        "Value": "30433.0",
+        "Forecast": "30433.0",
+        "Date": "2006-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 78,
+        "Value": "31780.0",
+        "Forecast": "31780.0",
+        "Date": "2007-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 79,
+        "Value": "33552.0",
+        "Forecast": "33552.0",
+        "Date": "2008-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 80,
+        "Value": "32901.0",
+        "Forecast": "32901.0",
+        "Date": "2009-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 81,
+        "Value": "33658.0",
+        "Forecast": "33658.0",
+        "Date": "2010-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 82,
+        "Value": "35069.0",
+        "Forecast": "35069.0",
+        "Date": "2011-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 83,
+        "Value": "35695.0",
+        "Forecast": "35695.0",
+        "Date": "2012-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 84,
+        "Value": "34858.0",
+        "Forecast": "34858.0",
+        "Date": "2013-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 85,
+        "Value": "36880.0",
+        "Forecast": "36880.0",
+        "Date": "2014-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 86,
+        "Value": "37753.0",
+        "Forecast": "37753.0",
+        "Date": "2015-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 87,
+        "Value": "38475.0",
+        "Forecast": "38475.0",
+        "Date": "2016-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 88,
+        "Value": "39197.0",
+        "Forecast": "39197.0",
+        "Date": "2017-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 89,
+        "Value": "40977.0",
+        "Forecast": "40977.0",
+        "Date": "2018-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 90,
+        "Value": "43191.0",
+        "Forecast": "43191.0",
+        "Date": "2019-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 91,
+        "Value": "46631.0",
+        "Forecast": "46631.0",
+        "Date": "2020-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 92,
+        "Value": "51141.0",
+        "Forecast": "51141.0",
+        "Date": "2021-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 93,
+        "Value": "52194.0",
+        "Forecast": "52194.0",
+        "Date": "2022-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 94,
+        "Value": "42290.1953125",
+        "Forecast": "42290.1953125",
+        "Date": "2023-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 95,
+        "Value": "52672.00390625",
+        "Forecast": "52672.00390625",
+        "Date": "2024-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 96,
+        "Value": "40130.37890625",
+        "Forecast": "40130.37890625",
+        "Date": "2025-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 97,
+        "Value": "46354.68359375",
+        "Forecast": "46354.68359375",
+        "Date": "2026-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 98,
+        "Value": "52801.2421875",
+        "Forecast": "52801.2421875",
+        "Date": "2027-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 99,
+        "Value": "53612.95703125",
+        "Forecast": "53612.95703125",
+        "Date": "2028-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 100,
+        "Value": "56712.1015625",
+        "Forecast": "56712.1015625",
+        "Date": "2029-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 101,
+        "Value": "49058.7109375",
+        "Forecast": "49058.7109375",
+        "Date": "2030-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 102,
+        "Value": "49135.8984375",
+        "Forecast": "49135.8984375",
+        "Date": "2031-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 103,
+        "Value": "50449.96875",
+        "Forecast": "50449.96875",
+        "Date": "2032-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 104,
+        "Value": "52551.546875",
+        "Forecast": "52551.546875",
+        "Date": "2033-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 105,
+        "Value": "54075.234375",
+        "Forecast": "54075.234375",
+        "Date": "2034-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 106,
+        "Value": "60447.01171875",
+        "Forecast": "60447.01171875",
+        "Date": "2035-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 107,
+        "Value": "56359.3203125",
+        "Forecast": "56359.3203125",
+        "Date": "2036-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 108,
+        "Value": "53901.6015625",
+        "Forecast": "53901.6015625",
+        "Date": "2037-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 109,
+        "Value": "59298.65234375",
+        "Forecast": "59298.65234375",
+        "Date": "2038-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 110,
+        "Value": "57529.84375",
+        "Forecast": "57529.84375",
+        "Date": "2039-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 111,
+        "Value": "65007.703125",
+        "Forecast": "65007.703125",
+        "Date": "2040-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 112,
+        "Value": "62696.04296875",
+        "Forecast": "62696.04296875",
+        "Date": "2041-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 113,
+        "Value": "57582.62109375",
+        "Forecast": "57582.62109375",
+        "Date": "2042-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 114,
+        "Value": "62894.76953125",
+        "Forecast": "62894.76953125",
+        "Date": "2043-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 115,
+        "Value": "69168.796875",
+        "Forecast": "69168.796875",
+        "Date": "2044-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 116,
+        "Value": "71651.0390625",
+        "Forecast": "71651.0390625",
+        "Date": "2045-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 117,
+        "Value": "76623.15625",
+        "Forecast": "76623.15625",
+        "Date": "2046-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 118,
+        "Value": "70969.125",
+        "Forecast": "70969.125",
+        "Date": "2047-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 119,
+        "Value": "68676.625",
+        "Forecast": "68676.625",
+        "Date": "2048-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 120,
+        "Value": "66818.2578125",
+        "Forecast": "66818.2578125",
+        "Date": "2049-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 121,
+        "Value": "61832.09375",
+        "Forecast": "61832.09375",
+        "Date": "2050-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 122,
+        "Value": "75656.4296875",
+        "Forecast": "75656.4296875",
+        "Date": "2051-01-01",
+        "Actual": ""
+    },
+    {
+        "index": 123,
+        "Value": "77492.796875",
+        "Forecast": "77492.796875",
+        "Date": "2052-01-01",
+        "Actual": ""
+    }
+]

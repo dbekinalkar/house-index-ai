@@ -37,6 +37,7 @@ const MapView = ({ setTooltipContent, fillColor, year, getPrice }) => {
                   setTooltipContent({
                     name: geo.properties.name,
                     id: geo.id,
+                    year: year,
                   });
                 }}
                 onMouseLeave={() => {
@@ -58,17 +59,6 @@ const MapView = ({ setTooltipContent, fillColor, year, getPrice }) => {
                 />
               </g>
             ))}
-            {/* {geographies.map((geo) => {
-              return (
-                <State
-                  key={geo.rsmKey}
-                  geo={geo}
-                  offsets={offsets}
-                  allStates={allStates}
-                  setTooltipContent={setTooltipContent}
-                />
-              );
-            })} */}
           </>
         )}
       </Geographies>
