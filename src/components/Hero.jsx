@@ -5,7 +5,7 @@ const Hero = ({ scrollToMain }) => {
     <div
       className="hero min-h-screen min-w-screen"
       style={{
-        backgroundImage: "url(public/hero-bg.jpg)",
+        backgroundImage: "url(hero-bg.jpg)",
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
