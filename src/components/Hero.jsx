@@ -11,7 +11,7 @@ const Hero = ({ scrollToMain }) => {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content backdrop-blur-lg rounded-lg">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Index AI</h1>
+          <h1 className="mb-5 text-5xl font-bold">AI Housing Affordability Index</h1>
           <p className="mb-5">
             Our website is committed to examining the challenges of housing
             affordability with reliable data from the Federal Reserve Economic
